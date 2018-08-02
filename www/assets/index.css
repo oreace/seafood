@@ -83,12 +83,6 @@ p {
     overflow: hidden;
     background: none !important;
 }
-
-iframe {
-    min-Width: 1000px;
-    height: 400px
-}
-
 table th,
 td {
     padding: 10px;
