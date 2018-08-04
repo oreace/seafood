@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.makokofresh.girls" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>makokofresh</name>
+    <name>Makokofresh</name>
     <description>
-        makokofresh is a site to order for different varieties of seafood.
+        Makokofresh is a site to order for different varieties of seafood.
     </description>
-    <author email="info@girlscoding.com.ng" href="http://girlscoding.com.ng">
+    <author email="info@makokfresh.com.ng" href="http://makokofresh.com.ng">
         GirlsCoding Team
     </author>
     <content src="index.html" />

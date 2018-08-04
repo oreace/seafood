@@ -1,119 +1,189 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Seafood</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/bootstrap.min.css">
-      <script src="assets/jquery-3.3.1.js"></script>
-      <script src="assets/bootstrap.min.js"></script>
-  <link href="assets/index.css" rel="stylesheet" type="text/css">
-<link href="assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Makoko Fresh - Store</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/materialize.css" />
 </head>
-<body>   
-    <header style="margin-bottom:50px;">        
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-            
-            <!-- BRAND -->
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#alignment-example" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="images/logo.png" style="max-height:35px"></a>
-            </div>
-            
-            <!-- COLLAPSIBLE NAVBAR -->
-            <div class="collapse navbar-collapse" id="alignment-example">
-            
-            <!-- Links -->
-            <ul class="nav navbar-nav">
-            <li><a href="index.html">HOME </a></li>
-            <li><a href="shop.html">SHOP</a></li>
-            <li class="active"><a href="team.html">TEAM <span class="sr-only">(current)</span></a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            
-            <!-- Button -->
-            <a href="order.html">
-            <button type="button" class="btn btn-primary navbar-btn navbar-right">Place your order</button>
-            </a>
-            </div>
-            
-            </div>
-            </nav>
-        </header>
-        <div class="container">
-        <center><h1>THE TEAM</h1></center>
-          <div class="row">
 
-<div class="content items">
+<body>
+    <!-- navbar -->
+    <nav class="nav-wrapper transparent">
+        <a href="index.html" class="brand-logo">
+            <img src="images/logo.png" class="responsive-img">
+        </a>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons black-text">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li>
+                <a href="index.html" class="black-text">Home</a>
+            </li>
+            <li>
+                <a href="store.html" class="black-text">Store</a>
+            </li>
+            <li>
+                <a href="team.html" class="blue lighten-2">Team</a>
+            </li>
+            <li>
+                    <a href="order.html" class="btn-floating pulse blue lighten-2"><i class="material-icons black-text" id="cart">add_shopping_cart</i></a>
+            </li>
+        </ul>
+        <ul class="sidenav blue lighten-2" id="mobile-menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="store.html">Store</a>
+            </li>
+            <li>
+                <a href="team.html" class="black white-text">Team</a>
+            </li>
+            <li>
+                <a href="order.html">
+                    <i class="material-icons" id="cart">add_shopping_cart</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-    <div class="col-md-4">
-            <div class="align-center">
-                <h4>Sharon Okpoe</h4>
-                <img src="images/sharon.jpg" alt="" class="img-responsive">
-                <p>
- She is a seventeen (17) year old girl and the leader of this group. She likes reading, 
- writing, thinking positively. She wants to become a software engineer in the future.
-                </p>
+    <div class="parallax-container top">
+        <div class="parallax">
+            <img src="images/4.jpeg" />
+        </div>
+        <h3 class="center blue-text text-darken-4">Makoko Fresh
+            <br> Team</h3>
+        <p class="center flow-text blue-text text-darken-4">Oh hey there, checkout our wonderful team</p>
+    </div>
+
+
+    <section class="container section">
+        <div class="row">
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/sharon.jpg" class="responsive-image">
+                    </div>
+                    <div class="card-content">
+                    <h4>Sharon Okpoe</h4>
+                    <p>
+                        She is a seventeen (17) year old girl and the leader of this group. She likes reading, writing, thinking positively. She
+                        wants to become a software engineer in the future.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+<div class="col s12 m6 l4">
+    <div class="card">
+        <div class="card-image">
+            <img src="images/maria.jpg" class="responsive-image">
+        </div>
+        <div class="card-content">
+        <h4>Maria Oluwagbade</h4>
+            <p>
+                She is a fifteen (15) year old girl and a member of this group. She likes singing, writing, reading, and dancing . She wants
+                to become a data analyst in the future.
+            </p>
+      </div>
+    </div>
+</div>
+
+<div class="col s12 m6 l4">
+    <div class="card">
+        <div class="card-image">
+            <img src="images/tomisin.jpg" class="responsive-image">
+        </div>
+        <div class="card-content">
+        <h4>Tomisin James</h4>
+        <p>
+            She is a fifteen (15) year old girl and a member of this group. She likes drawing, writing, taking pictures, talking and
+            reading. She wants to become an astronant in the future.
+        </p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="row">
+<div class="col s12 m6 l4">
+    <div class="card">
+        <div class="card-image">
+            <img src="images/halimot.jpg" class="responsive-image">
+        </div>
+        <div class="card-content">
+        <h4>Alimot Matti</h4>
+<p>
+    She is a sixteen (16) year old girl and a member of this group.She likes trading, coding. She wants to become a developer
+    in the future.
+</p>
+</div>
+    </div>
+</div>
+
+<div class="col s12 m6 l4">
+    <div class="card">
+        <div class="card-image">
+        <img src="images/misturah.jpg" class="responsive-image">
+        </div>
+        <div class="card-content">
+    <h4>Misturah Isiaq</h4>
+    <p>She is a seventeen (17) year girl and the assistant leader of this group. She likes solving problems. She wants to become
+    a neurosurgeon in the future.
+    </p>
         </div>
     </div>
-<div class="col-md-4">
-    <div class="align-center">
-<h4>Maria Oluwagbade</h4>
-        <img src="images/maria.jpg" alt="" class="img-responsive">
-        <p>
- She is a fifteen (15) year old girl and a member of this group. She likes singing, writing,
- reading, and dancing . She wants to become a data analyst in the future.
-        </p>
-    </div>
-</div>
-
-<div class="col-md-4">
-<div class="align-center">
-<h4>Tomisin James</h4>
-        <img src="images/tomisin.jpg" alt="" class="img-responsive">
-        <p>
- She is a fifteen (15) year old girl and a member of this group. She likes drawing, writing, 
- taking pictures, talking and reading. She wants to become an astronant in the future.
-        </p>
-    </div>
-</div>
-
-<div class="col-md-4">
-    <div class="align-center">
-    <h4>Alimot Matti</h4>
-        <img src="images/halimot.jpg" alt="" class="img-responsive">
-        <p>
- She is a sixteen (16) year old girl and a member of this group.She likes trading, coding. 
- She wants to become a developer in the future.
-        </p>
-    </div>
-</div>
-
-<div class="col-md-4">
-    <div class="align-center">
-        <h4>Misturah Isiaq</h4>
-        <img src="images/sharon.jpg" alt="" class="img-responsive">
-        <p>She is a seventeen (17) year girl and the assistant leader of this group. She likes
-         solving problems. She wants to become a neurosurgeon in the future. 
-        </p>
-    </div>
 </div>
 
 
-</div>
-</div>
-</div>
-        <footer>
-            <center>
-                <p>&copy; DESIGNED BY SMAT</p>
-            </center>
-        </footer>
-        </body>
-        </html>
+        </div>
+    </section>
+
+    <footer class="page-footer blue lighten-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About GirlsCoding</h5>
+                    <p>We are passionate about increasing the number of females in STEM, training the girls in underserved community
+                        and improving the resourcefulness of young girls and women through our widespread packages.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connnect</h5>
+                    <ul>
+                        <li>
+                            <i class="fab fa-facebook"></i>
+                            <a href="https://facebook.com/pearlsafrica" class="grey-text text-lighten-3">Facebook</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                            <a href="https://twitter.com/pearls_africa" class="grey-text text-lighten-3">Instagram</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://linkedin.com/Pearls Africa Foundation" class="grey-text text-lighten-3">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy 2018 GirlsCoding</div>
+        </div>
+    </footer>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/materialize.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,105 +1,231 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Seafood</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/bootstrap.min.css">
-    <script src="assets/jquery-3.3.1.js"></script>
-    <script src="assets/bootstrap.min.js"></script>
-  <link href="assets/index.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <header style="margin-bottom:50px;">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-            
-            <!-- BRAND -->
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#alignment-example" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="images/logo.png" style="max-height:35px"></a>
-            </div>
-            
-            <!-- COLLAPSIBLE NAVBAR -->
-            <div class="collapse navbar-collapse" id="alignment-example">
-            
-            <!-- Links -->
-            <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">HOME <span class="sr-only">(current)</span></a></li>
-            <li><a href="shop.html">SHOP</a></li>
-            <li><a href="team.html">TEAM</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            
-            <!-- Button -->
-            <a href="order.html">
-            <button type="button" class="btn btn-primary navbar-btn navbar-right">Place your order</button>
-            </a>
-            </div>
-            
-            </div>
-            </nav>
-        </header>
-    <img src="images/no 18.jpg" style="width:100%;">
-    <section class="container" >
-    <div class="row items">
-      <center><h2>What we sell</h2></center>
-      <p>We sell different varieties of seafood</p>
-      <div class="box col-lg-3 col-md-4 col-sm-6 col-12">
-          <img src="images/no 51.jpg"  class="img-responsive">
-          <center>
-          <h4>Tilapia</h4>
-          </center>
-        </div>
-        <div class="box col-lg-3 col-md-4 col-sm-6 col-12">
-            <img src="images/crab.jpg"  class="img-responsive">
-            <center>
-            <h4>Crab</h4>
-            </center>
-          </div>  
-      <div class="box col-lg-3 col-md-4 col-sm-6 col-12">
-          <img src="images/snail.jpg"  class="img-responsive">
-          <center>
-          <h4>Snail</h4>
-          </center>
-        </div>
-        <div class="box col-lg-3 col-md-4 col-sm-6 col-12">
-            <img src="images/abo.jpg"  class="img-responsive">
-            <center>
-            <h4>Dry Abo</h4>
-            </center>
-          </div> 
-          <center>
-              <div class="fish">
-               <a href="shop.html"><button type="button" class="btn btn-primary">View More...</button></a>
-                </div>
-          </center>
-        </div>
-      </section>   
-         <div class="container" >
-          <div class="jumbotron" >       
-        <h2>About Us</h2><br>
-          <p>Why Makoko Fresh?
-          Makoko Fresh is a website created by SMAT team for
-          fishermen in Makoko community in order to enable
-          them sell their products to people outside Makoko
-          community. We realised that there are lot of middle
-          men between the fishermen and the final consumers.
-          The fishermen who are the real husstlers do not make
-          much gain like the middlemen so we decided to help 
-          them by building this platform so it will be between
-          and the final consumers.
-        </p>
-        </div>
- </div>
+<html lang="en">
 
-    <footer>
-      <center><p>&copy; DESIGNED BY  SMAT</p></center>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <title>Makoko Fresh - Home</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/all.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/materialize.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logo.png" class="responsive-img">
+      </a>
+      <a href="" class="sidenav-trigger" data-target="mobile-menu">
+        <i class="material-icons black-text">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="index.html" class="blue lighten-2">Home</a>
+        </li>
+        <li>
+          <a href="store.html" class="black-text">Store</a>
+        </li>
+        <li>
+          <a href="team.html" class="black-text">Team</a>
+        </li>
+        <li>
+          <a href="order.html" class="btn-floating pulse blue lighten-2">
+            <i class="material-icons black-text" id="cart">add_shopping_cart</i>
+          </a>
+        </li>
+      </ul>
+      <ul class="sidenav blue lighten-2" id="mobile-menu">
+        <li>
+          <a href="index.html" class="black white-text">Home</a>
+        </li>
+        <li>
+          <a href="store.html">Store</a>
+        </li>
+        <li>
+          <a href="team.html">Team</a>
+        </li>
+        <li>
+          <a href="order.html">
+            <i class="material-icons" id="cart">add_shopping_cart</i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="into-mobile center hide-on-med-and-up">
+      <h4>Welcome to Makoko Fresh</h4>
+      <p class="flow-text">We bring seafood to your doorstep</p>
+    </div>
+    <div class="into center hide-on-small-and-down ">
+      <h3>Welcome to Makoko Fresh</h3>
+      <p class="flow-text">We bring seafood to your doorstep</p>
+    </div>
+
+  </header>
+  <section class="container section">
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="images/who.JPG" alt="" class="responsive-img materialboxed" />
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="blue-text lighten-2">Who we are</h2>
+        <p>Makoko Fresh is a website created by SMAT team for fishermen in Makoko community in order to enable them sell their
+          products to people outside Makoko community.
+        </p>
+        <div class="input-field left-align">
+          <a href="team.html" class="btn blue lighten-2">View our team</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 push-l7">
+        <img src="images/snakefish.JPG" alt="" class="responsive-img materialboxed" />
+      </div>
+      <div class="col s12 l6 pull-l5 right-align offset-l1">
+        <h2 class="blue-text lighten-2">What we sell</h2>
+        <p>Our stock vary from season to season, you can check out our store to have a general idea of what we sell. Our order
+          form updates with the current stock our fishermen have.</p>
+        <div class="input-field right-align">
+          <a href="store.html" class="btn blue lighten-2">Store</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="images/snails.jpg" alt="" class="responsive-img materialboxed" />
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="blue-text lighten-2">Why use us</h2>
+        <p>We realised that there are lot of middle men between the fishermen and the final consumers. The fishermen who are
+          the real husstlers do not make much gain like the middlemen so we decided to help them by building this platform
+          so it will be between and the final consumers.</p>
+        <div class="input-field left-align">
+          <a href="order.html" class="btn blue lighten-2">Order Here</a>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/1.jpeg" class="responsive-img" />
+    </div>
+  </div>
+
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l6">
+        <h2 class="blue-text lighten-3">Find Us</h2>
+        <iframe style="width: 100%; height: 300px;" id="gmap_canvas" src="https://maps.google.com/maps?q=55%20Moleye%20Street%20Alagomeji-Yaba%2C%20Alagomeji-Yaba%20100242%2C%20Lagos&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        </iframe>
+      </div>
+      <div class="col s12 l5 offset-l1">
+        <h2 class="blue-text lighten-3">Get in touch</h2>
+        <form id="contact-form">
+          <div class="input-field">
+            <i class="material-icons prefix">account_circle</i>
+            <input type="text" id="name" name="name" required/>
+            <label for="name">Your name</label>
+          </div>
+
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email" name="email" required />
+            <label for="email">Your email</label>
+          </div>
+
+          <div class="input-field">
+            <i class="material-icons prefix">location_on</i>
+            <textarea id="add" class="materialize-textarea" name="add"></textarea>
+            <label for="add">Your Address</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea" name="msg"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+
+          <div class="input-field center">
+            <button class="btn blue lighten-3">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="page-footer blue lighten-2">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>About GirlsCoding</h5>
+          <p>We are passionate about increasing the number of females in STEM, training the girls in underserved community and
+            improving the resourcefulness of young girls and women through our widespread packages.</p>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h5>Connnect</h5>
+          <ul>
+            <li>
+              <i class="fab fa-facebook"></i>
+              <a href="https://facebook.com/pearlsafrica" class="grey-text text-lighten-3">Facebook</a>
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i>
+              <a href="https://twitter.com/pearls_africa" class="grey-text text-lighten-3">Instagram</a>
+            </li>
+            <li>
+              <i class="fab fa-linkedin"></i>
+              <a href="https://linkedin.com/Pearls Africa Foundation" class="grey-text text-lighten-3">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy 2018 GirlsCoding</div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="assets/jquery.js"></script>
+  <script src="assets/materialize.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+    });
+  </script>
+  <script>
+    $(document).on('submit', '#contact-form', function (e) {
+      e.preventDefault();
+      $.ajax({
+        url: "data.php",
+        method: "POST",
+        data: new FormData(this),
+        contentType: false,
+        processData: false,
+        dataType: "text",
+        success: function (data) {
+          if (data == "success") {
+            if (data == "success") {
+              alert("Your message has been sent successfully!");
+            } else {
+              alert(data);
+            }
+
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>
