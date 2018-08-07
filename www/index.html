@@ -152,8 +152,9 @@
             <label for="message">Your Message</label>
           </div>
 
+          <input type="hidden" name="contact" id="contact" value="contact">
           <div class="input-field center">
-            <button class="btn blue lighten-3">Submit</button>
+            <button class="btn blue lighten-3" type="submit">Submit</button>
           </div>
         </form>
       </div>
@@ -213,14 +214,13 @@
         dataType: "text",
         success: function (data) {
           if (data == "success") {
-            if (data == "success") {
               alert("Your message has been sent successfully!");
             } else {
               alert(data);
             }
 
           }
-        }
+        
       });
     });
   </script>
