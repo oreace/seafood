@@ -66,94 +66,96 @@
 
 
     <section class="container section">
-    <div class="row">
-    <div class="col s12 m6 l6 xl6  offset-l3 offset-xl3">
-    <form id="order-form">
-    <div class="input-field">
-        <i class="material-icons prefix">account_circle</i>
-        <input type="text" id="name" name="name" required/>
-        <label for="name">Your name</label>
-    </div>
+        <div class="row">
+            <div class="col s12 m6 l6 xl6  offset-l3 offset-xl3">
+                <form id="order-form">
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" id="name" name="name" required/>
+                        <label for="name">Your name</label>
+                    </div>
 
-    <div class="input-field">
-    <i class="material-icons prefix">phone</i>
-    <input type="number" id="gsm" name="gsm" min="1" required/>
-    <label for="gsm">Your number</label>
-    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">phone</i>
+                        <input type="number" id="gsm" name="gsm" min="1" required/>
+                        <label for="gsm">Your number</label>
+                    </div>
 
-    <div class="input-field">
-        <i class="material-icons prefix">email</i>
-        <input type="email" id="email" name="email" required />
-        <label for="email">Your email</label>
-    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email" name="email" required />
+                        <label for="email">Your email</label>
+                    </div>
 
-    <div class="input-field">
-        <i class="material-icons prefix">location_on</i>
-        <textarea id="add" class="materialize-textarea" name="add" required></textarea>
-        <label for="add">Your Address</label>
-    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">location_on</i>
+                        <textarea id="add" class="materialize-textarea" name="add" required></textarea>
+                        <label for="add">Your Address</label>
+                    </div>
 
-    <div class="input-field center">
-    <a href="javascript:;" class="btn blue lighten-3 addmore">Add more seafood</a>
-    </div>
- 
-    <div class="more">
-    <div>   
-    <div class="input-field">
-    <select id="seafood[]" name="seafood[]" class="seafood" required>
-    <option value="" disabled selected>Select seafood</option>
-    <option value="Shrimps" amount="2000">Shrimps</option>
-    <option value="Prawns" amount="3000">Prawns</option>
-    <option value="Crabs" amount="1000">Crabs</option>
-    <option value="Titus" amount="1000">Titus</option>
-    <option value="Dry Titus" amount="2000">Dry Titus</option>
-    <option value="Catfish" amount="1500">Catfish</option>
-    <option value="Dry Catfish" amount="2000">Dry Catfish</option>
-    <option value="Tilapia" amount="1000">Tilapia</option>
-    <option value="Obokun" amount="1000">Obokun</option>
-    <option value="Panla" amount="800">Panla</option>
-    <option value="Dry Panla" amount="1100">Dry Panla</option>
-    <option value="Snail" amount="3000">Snail</option>
-    <option value="Shawa" amount="380">Shawa</option>
-    <option value="Dry Shawa" amount="1000">Dry Shawa</option>
-    <option value="Kote" amount="1000">Kote</option>
-    <option value="Croacker" amount="1500">Croacker</option>
-    <option value="Red Snapper" amount="1000">Red Snapper</option>
-    <option value="Abo" amount="1000">Abo</option>
-    <option value="Dry Abo" amount="1000"> Dry Abo</option>
-    <option value="Abo" amount="1000">Ofon</option>
-    <option value="Kekere" amount="1000">Kekere</option>
-    </select>
-        <label for="seafood[]" class="select-label">Select Seafood</label>
-    </div>
+                    <div class="input-field center">
+                        <a href="javascript:;" class="btn blue lighten-3 addmore">Add more seafood</a>
+                    </div>
 
-    <div class="input-field">
-       <select name="quantity[]" id="quantity[]" class="quantity" required>
-        </select>
-    <label for="quantity[]" class="select-label">Select Quantity</label>
-    </div>
-    </div>
+                    <div class="more">
+                        <div>
+                            <div class="input-field">
+                                <select id="seafood[]" name="seafood[]" class="seafood" required>
+                                    <option value="" disabled selected>Select seafood</option>
+                                    <option value="Shrimps" amount="2000">Shrimps</option>
+                                    <option value="Prawns" amount="3000">Prawns</option>
+                                    <option value="Crabs" amount="1000">Crabs</option>
+                                    <option value="Titus" amount="1000">Titus</option>
+                                    <option value="Dry Titus" amount="2000">Dry Titus</option>
+                                    <option value="Catfish" amount="1500">Catfish</option>
+                                    <option value="Dry Catfish" amount="2000">Dry Catfish</option>
+                                    <option value="Tilapia" amount="1000">Tilapia</option>
+                                    <option value="Obokun" amount="1000">Obokun</option>
+                                    <option value="Panla" amount="800">Panla</option>
+                                    <option value="Dry Panla" amount="1100">Dry Panla</option>
+                                    <option value="Snail" amount="3000">Snail</option>
+                                    <option value="Shawa" amount="380">Shawa</option>
+                                    <option value="Dry Shawa" amount="1000">Dry Shawa</option>
+                                    <option value="Kote" amount="1000">Kote</option>
+                                    <option value="Croacker" amount="1500">Croacker</option>
+                                    <option value="Red Snapper" amount="1000">Red Snapper</option>
+                                    <option value="Abo" amount="1000">Abo</option>
+                                    <option value="Dry Abo" amount="1000"> Dry Abo</option>
+                                    <option value="Ofon" amount="1000">Ofon</option>
+                                    <option value="Kekere" amount="1000">Kekere</option>
+                                </select>
+                                <label for="seafood[]" class="select-label">Select Seafood</label>
+                            </div>
+
+                            <div class="input-field">
+                                <select name="quantity[]" id="quantity[]" class="quantity" required>
+                                </select>
+                                <label for="quantity[]" class="select-label">Select Quantity</label>
+                            </div>
+                        </div>
 
 
-</div>
+                    </div>
 
-    <div class="input-field">
-        <i class="material-icons prefix">message</i>
-        <textarea id="message" class="materialize-textarea" name="msg"></textarea>
-        <label for="message">Your Message</label>
-    </div>
-    <div class="input-field ceneter">
-         Delivery fee is &#8358;1000
-    </div>
-    <div class="input-field">
-    <h3>Total: &#8358;<span class="total">0</span></h3>
-    </div>
-    <div class="input-field center">
-        <button class="btn blue lighten-3">Submit</button>
-    </div>
-    </form>
-    </div>
-    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" name="msg"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field ceneter">
+                        Delivery fee is &#8358;1000
+                    </div>
+                    <div class="input-field">
+                        <h3>Total: &#8358;
+                            <span class="total">0</span>
+                        </h3>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn blue lighten-3">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer class="page-footer blue lighten-2">
@@ -185,7 +187,7 @@
             </div>
         </div>
         <div class="footer-copyright grey darken-4">
-            <div class="container center-align">&copy 2018 GirlsCoding</div>
+            <div class="container center-align">&copy; 2018 GirlsCoding</div>
         </div>
     </footer>
     <script src="assets/jquery.js"></script>
@@ -198,158 +200,162 @@
             $('select').formSelect();
         });
     </script>
-<script>
-
-    $(document).on('change', '.seafood', function (e) {
-        e.preventDefault();
-        var seafood = $(this).val();
-        var quan = $(this).parent().parent().parent().find('.quantity');
-        if (seafood !== "") {
-            $.ajax({
-                 url: "http://makokofresh.com.ng/data.php",
-                method: "POST",
-                data: {
-                    action: 'get_quantity',
-                    seafood: seafood
-                },
-                dataType: "text",
-                success: function (data) {
-                    quan.html(data);
-                    quan.formSelect();
-                }
-            });
-
-        }
-    });
-    $(document).on('click', '.addmore', function (e) {
-        e.preventDefault();
-        $('.more').append('<div><div class="input-field">' +
-            '<select id="seafood[]" name="seafood[]"  class="seafood" required>' +
-            '<option>Select seafood</option>' +
-            '<option value="Shrimps" amount="2000">Shrimps</option>' +
-            '<option value="Prawns" amount="3000">Prawns</option>' +
-            '<option value="Crabs" amount="1000">Crabs</option>' +
-            '<option value="Titus" amount="1000">Titus</option>' +
-            '<option value="Dry Titus" amount="2000">Dry Titus</option>' +
-            '<option value="Catfish" amount="1500">Catfish</option>' +
-            '<option value="Dry Catfish" amount="2000">Dry Catfish</option>' +
-            '<option value="Tilapia" amount="1000">Tilapia</option>' +
-            '<option value="Obokun" amount="1000">Obokun</option>' +
-            '<option value="Panla" amount="800">Panla</option>' +
-            '<option value="Dry Panla" amount="1100>Dry Panla</option>' +
-            '<option value="Snail" amount="3000">Snail</option>' +
-            '<option value="Shawa" amount="380">Shawa</option>' +
-            '<option value="Dry Shawa" amount="1000">Dry Shawa</option>' +
-            '<option value="Kote" amount="1000">Kote</option>' +
-            '<option value="Croacker" amount="1500">Croacker</option>' +
-            '<option value="Red Snapper" amount="1000">Red Snapper</option>' +
-            '<option value="Abo" amount="1000">Abo</option>' +
-            '<option value="Dry Abo" amount="1000">Dry Abo</option>' +
-            '<option value="Kekere" amount="1000">Kekere</option>' +
-            '<option value="Ofon" amount="1000">Ofon</option>' +
-            '</select>' +
-            '<label for="seafood[]" class="select-label">Select Seafood</label>'+
-    
-            '</div>' +
-            '<div class="input-field">' +
-            '<select name="quantity[]" id="quantity[]" class="quantity" required>' +
-            '</select>' +
-            '<label for="quantity[]" class="select-label">Select Quantity</label>'+
-            '</div></div>');
-            $('select').formSelect();
-    });
-
-    $(document).on('change', '.quantity', function (e) {
-        var seafoods = $('.seafood option:selected').map(function () {
-            return $(this).attr('amount');
-        }).get();
-        var quantities = $('.quantity option:selected').map(function () {
-            return $(this).val();
-        }).get();
-        var total = 0;
-        $.each(seafoods, function (i) {
-            var seafood = parseInt(seafoods[i]);
-            var quantity = parseInt(quantities[i]);
-            console.log(seafood);
-            console.log(quantity);
-            total += seafood * quantity;
-        });
-        $('.total').html(total);
-    });
-
-    $(document).on('submit', '#order-form', function (e) {
-        e.preventDefault();
-        var email = $('#email').val();
-        var amount = $('.total').text();
-        var gsm = $('#gsm').val();
-        var name = $('#name').val();
-        var add = $('#add').val();
-        var msg = $('#msg').val();
-        var seafoods = $('.seafood option:selected').map(function () {
-            return $(this).attr('amount');
-        }).get();
-        var quantities = $('input[name="quantity[]"]').map(function () {
-            return $(this).val();
-        }).get();
-        var total = $('.total').html();
-
-        var pay = payWithRave(email, amount, gsm, name, add, msg, seafoods, quantities, total);
-    });
-
-    const API_publicKey = "FLWPUBK-f4f92ec93697e4e12527e3b861e83c34-X";
-
-    function payWithRave(email, amount, gsm, name, add, msg, seafoods, quantities, total) {
-        $('.fw-pay-screen').addClass('container');
-        var x = getpaidSetup({
-            PBFPubKey: API_publicKey,
-            customer_email: email,
-            amount: parseInt(amount) + 1000,
-            customer_phone: gsm,
-            currency: "NGN",
-            payment_method: "both",
-            txref: "MAKOKO" + Math.floor((Math.random() * 10000) + 1),
-            onclose: function () {},
-            callback: function (response) {
-                var txref = response.tx.txRef;
+    <script>
+        $(document).on('change', '.seafood', function (e) {
+            e.preventDefault();
+            var seafood = $(this).val();
+            var quan = $(this).parent().parent().parent().find('.quantity');
+            if (seafood !== "") {
                 $.ajax({
-                    url: "http://makokofresh.com.ng/verify.php",
+                    url: "data.php",
                     method: "POST",
                     data: {
-                        ref: txref,
-                        name: name,
-                        add: add,
-                        msg: msg,
-                        seafoods: seafoods,
-                        quantities: quantites,
-                        total: total
+                        action: 'get_quantity',
+                        seafood: seafood
                     },
+                    dataType: "text",
                     success: function (data) {
-                        if (data == "success") {
-                            if (
-                                response.tx.chargeResponseCode == "00" ||
-                                response.tx.chargeResponseCode == "0"
-                            ) {
-                                $('#order-form')[0].reset();
-                                alert("Payment successful");
-                            } else {
-                                alert("Error occured during payment");
-                            }
-
-                        } else {
-                            alert("Error occured during payment");
-                        }
-
-
+                        quan.html(data);
+                        quan.formSelect();
                     }
-
                 });
 
-                x.close();
             }
         });
-    }
+        $(document).on('click', '.addmore', function (e) {
+            e.preventDefault();
+            $('.more').append('<div><div class="input-field">' +
+                '<select id="seafood[]" name="seafood[]"  class="seafood" required>' +
+                '<option>Select seafood</option>' +
+                '<option value="Shrimps" amount="2000">Shrimps</option>' +
+                '<option value="Prawns" amount="3000">Prawns</option>' +
+                '<option value="Crabs" amount="1000">Crabs</option>' +
+                '<option value="Titus" amount="1000">Titus</option>' +
+                '<option value="Dry Titus" amount="2000">Dry Titus</option>' +
+                '<option value="Catfish" amount="1500">Catfish</option>' +
+                '<option value="Dry Catfish" amount="2000">Dry Catfish</option>' +
+                '<option value="Tilapia" amount="1000">Tilapia</option>' +
+                '<option value="Obokun" amount="1000">Obokun</option>' +
+                '<option value="Panla" amount="800">Panla</option>' +
+                '<option value="Dry Panla" amount="1100>Dry Panla</option>' +
+                '<option value="Snail" amount="3000">Snail</option>' +
+                '<option value="Shawa" amount="380">Shawa</option>' +
+                '<option value="Dry Shawa" amount="1000">Dry Shawa</option>' +
+                '<option value="Kote" amount="1000">Kote</option>' +
+                '<option value="Croacker" amount="1500">Croacker</option>' +
+                '<option value="Red Snapper" amount="1000">Red Snapper</option>' +
+                '<option value="Abo" amount="1000">Abo</option>' +
+                '<option value="Dry Abo" amount="1000">Dry Abo</option>' +
+                '<option value="Kekere Abo" amount="1000">Kekere</option>' +
+                '<option value="Ofon" amount="1000">Ofon</option>' +
+                '</select>' +
+                '<label for="seafood[]" class="select-label">Select Seafood</label>' +
 
-</script>
+                '</div>' +
+                '<div class="input-field">' +
+                '<select name="quantity[]" id="quantity[]" class="quantity" required>' +
+                '</select>' +
+                '<label for="quantity[]" class="select-label">Select Quantity</label>' +
+                '</div></div>');
+            $('select').formSelect();
+        });
+
+        $(document).on('change', '.quantity', function (e) {
+            var seafoods = $('.seafood option:selected').map(function () {
+                return $(this).attr('amount');
+            }).get();
+            var quantities = $('.quantity option:selected').map(function () {
+                return $(this).val();
+            }).get();
+            var total = 0;
+            $.each(seafoods, function (i) {
+                var seafood = parseInt(seafoods[i]);
+                var quantity = parseInt(quantities[i]);
+                console.log(seafood);
+                console.log(quantity);
+                total += seafood * quantity;
+            });
+            $('.total').html(total);
+        });
+
+
+        $(document).on('submit', '#order-form', function (e) {
+            e.preventDefault();
+            var email = $('#email').val();
+            var amount = $('.total').text();
+            var gsm = $('#gsm').val();
+            var name = $('#name').val();
+            var add = $('#add').val();
+            var msg = $('#message').val();
+            var seafoods = $('.seafood option:selected').map(function () {
+                return $(this).val();
+            }).get();
+            var quantities = $('.quantity option:selected').map(function () {
+                return $(this).val();
+            }).get();
+            var total = $('.total').html();
+             var pay = payWithRave(email, amount, gsm, name, add, msg, seafoods, quantities, total);
+        });
+
+        const API_publicKey = "FLWPUBK-f4f92ec93697e4e12527e3b861e83c34-X";
+
+        function payWithRave(email, amount, gsm, name, add, msg, seafoods, quantities, total) {
+            var name = name;
+            var email = email;
+            var amount = amount;
+            var gsm = gsm;
+            var add = add;
+            var msg = msg;
+            var seafoods = seafoods;
+            var quantities = quantities;
+            var total = total;
+            var x = getpaidSetup({
+                PBFPubKey: API_publicKey,
+                customer_email: email,
+                amount: parseInt(amount),
+                customer_phone: gsm,
+                currency: "NGN",
+                payment_method: "both",
+                txref: "MAKOKO" + Math.floor((Math.random() * 10000) + 1),
+                onclose: function () {},
+                callback: function (response) {
+                    var txref = response.tx.txRef;
+                    if (
+                        response.tx.chargeResponseCode == "00" ||
+                        response.tx.chargeResponseCode == "0"
+                    ) {
+                        $.ajax({
+                            url: "verify.php",
+                            method: "POST",
+                            data: {
+                                ref: txref,
+                                name: name,
+                                email: email,
+                                add: add,
+                                msg: msg,
+                                seafoods: seafoods,
+                                quantities: quantities,
+                                total: total
+                            },
+                            success: function (data) {
+                                if (data == "success") {
+                                    $('#order-form')[0].reset();
+                                    alert("Payment successful");
+                                } else {
+                                    alert("Error occured during payment");
+                                }
+                            }
+                        });
+
+                    } else {
+                        alert("Error occured during payment");
+                    }
+
+                    x.close();
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
