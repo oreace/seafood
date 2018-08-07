@@ -207,7 +207,7 @@
             var quan = $(this).parent().parent().parent().find('.quantity');
             if (seafood !== "") {
                 $.ajax({
-                    url: "data.php",
+                     url: "http://makokofresh.com.ng/data.php",
                     method: "POST",
                     data: {
                         action: 'get_quantity',
@@ -312,7 +312,7 @@
             var x = getpaidSetup({
                 PBFPubKey: API_publicKey,
                 customer_email: email,
-                amount: parseInt(amount),
+                amount: parseInt(amount) + 1000,
                 customer_phone: gsm,
                 currency: "NGN",
                 payment_method: "both",
@@ -325,7 +325,7 @@
                         response.tx.chargeResponseCode == "0"
                     ) {
                         $.ajax({
-                            url: "verify.php",
+                            url: "http://makokofresh.com.ng/verify.php",
                             method: "POST",
                             data: {
                                 ref: txref,
